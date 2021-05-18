@@ -1,0 +1,362 @@
+{
+  
+  "reseau": "Rare Leaks",
+  "warningMessageCount": 500,
+  "themeColor": "#303f9f",
+  "colors": [
+    "#EF5350",
+    "#EC407A",
+    "#AB47BC",
+    "#7E57C2",
+    "#5C6BC0",
+    "#42A5F5",
+    "#29B6F6",
+    "#26C6DA",
+    "#26A69A",
+    "#66BB6A",
+    "#9CCC65",
+    "#D4E157",
+    "#FFCA28",
+    "#FFA726",
+    "#FF7043",
+    "#8D6E63",
+    "#78909C"
+  ],
+
+  "useFormatNumberFrance": true,
+
+  "useWebRTCVocal": false,
+  "RTCConfig": {
+    "iceServers": [{
+      "urls": ["turn:barrax.needrp.net"],
+      "username": "gcphone",
+      "credential": "gcphone"
+    }]
+  },
+
+  "//": "REQUIRE https://github.com/citizenfx/screenshot-basic or set false",
+  "enableTakePhoto": true,
+  "fileUploadService_Url": "https://yordi.online/upload.php",
+  "fileUploadService_Field": "files[]",
+
+  "background": {
+    "Varsayılan": "back001.jpg",
+    "Kişiye Özel URL": "URL"
+  },
+
+  "background_default": {
+    "label": "Calvin & Hobbes",
+    "value": "back001.jpg"
+  },
+
+  "coque": {
+    "Varsayılan": "yordi-coque.png"
+  },
+  
+  "coque_default": {
+    "label": "Yordi Coque",
+    "value": "yordi-coque.png"
+  },
+
+  "serviceCall": [{
+      "display": "LSPD",
+      "icon": "/html/static/img/icons_app/lspd.png",
+      "subMenu": [{
+          "title": "Send A Message",
+          "eventName": "esx_addons_gcphone:call",
+          "type": {
+            "number": "police"
+          }
+        },
+        {
+          "title": "Appeler le standard",
+          "eventName": "gcphone:autoCallNumber",
+          "type": {
+            "number": "911"
+          }
+        }
+      ]
+    },
+    {
+      "display": "Medical",
+      "backgroundColor": "red",
+      "subMenu": [{
+        "title": "Envoyer un message",
+        "eventName": "esx_addons_gcphone:call",
+        "type": {
+          "number": "ambulance"
+        }
+      }]
+    }
+  ],
+
+  "defaultContacts": [
+    {
+      "number": "ambulance",
+      "display": "Medical",
+      "icon": "/html/static/img/icons_app/lsems.png"
+    },
+
+    {
+      "number": "police",
+      "display": "LSPD",
+      "icon": "/html/static/img/icons_app/lspd.png"
+    }
+  ],
+
+  "apps": [{
+      "name": "Mobilphone",
+      "fr_FR__name": "Téléphone",
+      "cs_CZ__name": "Telefon",
+      "en_US__name": "Phone",
+      "de_DE__name": "Telefon",
+      "pl_PL__name": "Telefon",
+      "es_ES__name": "llamar",
+      "icons": "/html/static/img/icons_app/call.png",
+      "routeName": "appels",
+      "inHomePage": true
+    },
+    {
+      "name": "Messages",
+      "fr_FR__name": "Messages",
+      "en_US__name": "Messages",
+      "cs_CZ__name": "Zprávy",
+      "de_DE__name": "Nachrichten",
+      "pl_PL__name": "Wiadomości",
+      "es_ES__name": "Mensajes",
+      "icons": "/html/static/img/icons_app/sms.png",
+      "routeName": "messages",
+      "inHomePage": true,
+      "puceRef": "nbMessagesUnread"
+    },
+    {
+      "name": "Contacts",
+      "fr_FR__name": "Contacts",
+      "en_US__name": "Contacts",
+      "cs_CZ__name": "Kontakty",
+      "de_DE__name": "Kontakte",
+      "pl_PL__name": "Kontakty",
+      "es_ES__name": "Contactos",
+      "icons": "/html/static/img/icons_app/contacts.png",
+      "routeName": "contacts",
+      "inHomePage": true
+    },
+    {
+      "name": "Settings",
+      "fr_FR__name": "Paramètres",
+      "en_US__name": "System",
+      "cs_CZ__name": "Nastavení",
+      "de_DE__name": "Einstellungen",
+      "pl_PL__name": "Ustawienia",
+      "es_ES__name": "Ajustes",
+      "icons": "/html/static/img/icons_app/settings.png",
+      "routeName": "parametre",
+      "inHomePage": true
+    },
+    {
+      "name": "Twitter",
+      "fr_FR__name": "Twitter",
+      "en_US__name": "Twitter",
+      "de_DE__name": "Twitter",
+      "pl_PL__name": "Twitter",
+      "es_ES__name": "Twitter",
+      "icons": "/html/static/img/icons_app/twitter.png",
+      "routeName": "twitter.transition",
+      "inHomePage": false,
+      "yordiActive": true
+    },
+    {
+      "name": "Ads",
+      "fr_FR__name": "Ads",
+      "en_US__name": "İlanlar",
+      "de_DE__name": "İlanlar",
+      "pl_PL__name": "İlanlar",
+      "es_ES__name": "İlanlar",
+      "icons": "/html/static/img/icons_app/ad.png",
+      "routeName": "ad.transition",
+      "inHomePage": false,
+      "yordiActive": true
+    },
+    {
+      "name": "Bank",
+      "fr_FR__name": "Bank",
+      "en_US__name": "Bankmanager",
+      "cs_CZ__name": "Bank",
+      "de_DE__name": "Bank",
+      "pl_PL__name": "Lawka",
+      "es_ES__name": "Banquillo",
+      "icons": "/html/static/img/icons_app/bank.png",
+      "routeName": "bank.transition",
+      "inHomePage": false,
+      "yordiActive": true
+    },
+    {
+      "name": "Camera",
+      "fr_FR__name": "Camera",
+      "cs_CZ__name": "Fotoaparát",
+      "en_US__name": "Camera",
+      "de_DE__name": "Kamera",
+      "pl_PL__name": "Kamera",
+      "es_ES__name": "Cámara",
+      "icons": "/html/static/img/icons_app/photo.png",
+      "routeName": "photo",
+      "yordiActive": true
+    },
+    {
+      "name": "News",
+      "fr_FR__name": "News",
+      "cs_CZ__name": "Fotoaparát",
+      "en_US__name": "Camera",
+      "de_DE__name": "Kamera",
+      "pl_PL__name": "Kamera",
+      "es_ES__name": "Cámara",
+      "icons": "/html/static/img/icons_app/news.png",
+      "routeName": "news.transition",
+      "yordiActive": true
+    },
+    {
+      "name": "App Store",
+      "fr_FR__name": "App Store",
+      "cs_CZ__name": "Fotoaparát",
+      "en_US__name": "Camera",
+      "de_DE__name": "Kamera",
+      "pl_PL__name": "Kamera",
+      "es_ES__name": "Cámara",
+      "icons": "/html/static/img/icons_app/games.png",
+      "routeName": "games.transition",
+      "yordiActive": true
+    },
+    {
+      "name": "Dark Chat",
+      "fr_FR__name": "Dark Chat",
+      "en_US__name": "Dark Chat",
+      "de_DE__name": "Dark Net",
+      "pl_PL__name": "Czat czarny",
+      "es_ES__name": "Chat Oscuro",
+      "icons": "/html/static/img/icons_app/tchat.png",
+      "routeName": "tchat",
+      "yordiActive": false
+    },
+    {
+      "name": "9GAG",
+      "icons": "/html/static/img/icons_app/9gag.png",
+      "routeName": "9gag",
+      "yordiActive": false
+    }
+  ],
+
+  "defaultLanguage": "fr_FR",
+  "language": {
+     "fr_FR": {
+      "NAME": "Turkish",
+      "PHONE_WARNING_MESSAGE": "Memory saturation!",
+      "PHONE_WARNING_MESSAGE_MESS": "message",
+      "CONFIRM": "Confirm",
+      "CANCEL": "Cancel",
+      "APP_CONFIG_TITLE": "Settings",
+      "APP_CONFIG_MY_MUNBER": "My number",
+      "APP_CONFIG_WALLPAPER": "Background",
+      "APP_CONFIG_CASE": "Phone Model",
+      "APP_CONFIG_ZOOM": "Phone Size",
+      "APP_CONFIG_VOLUME": "Sound Volume",
+      "APP_CONFIG_LANGUAGE": "Language options",
+      "APP_CONFIG_MOUSE_SUPPORT": "Mouse Control",
+      "APP_CONFIG_RESET": "Restore Factory Setting",
+      "APP_CONFIG_RESET_CONFIRM": "Erase All My Everything",
+      "APP_PHONE_CALL": "Call",
+      "APP_PHONE_CALL_ANONYMOUS": "Anonymous Voice",
+      "APP_PHONE_DELETE": "Delete Person",
+      "APP_PHONE_DELETE_ALL": "Delete Calls History",
+      "APP_PHONE_TITLE": "Phone",
+      "APP_PHONE_MENU_FAVORITES": "Favorites",
+      "APP_PHONE_MENU_RECENTS": "Recent",
+      "APP_PHONE_MENU_CONTACTS": "Contacts",
+      "APP_PHONE_ENTER_NUMBER": "Enter a number",
+      "APP_PHONE_NUMBER_HIDDEN": "Anonymous",
+      "APP_PHONE_NUMBER_UNKNOWN": "Unknown",
+      "APP_PHONE_CALL_IGNORE": "Ignored",
+      "APP_BANK_TITLE": "Bank",
+      "APP_BOURSE_TITLE": "stock Exchange",
+      "APP_CONTACT_TITLE": "Contact",
+      "APP_CONTACT_NEW": "New contact",
+      "APP_CONTACT_EDIT": "Update Contact",
+      "APP_CONTACT_SAVE": "Save",
+      "APP_CONTACT_CANCEL": "Cancel",
+      "APP_CONTACT_DELETE": "Sil",
+      "APP_CONTACT_LABEL_NAME": "Person Name & Surname",
+      "APP_CONTACT_LABEL_NUMBER": "Number",
+      "APP_MESSAGE_TITLE": "Messages",
+      "APP_MESSAGE_NEW_MESSAGE": "Send New Message",
+      "APP_MESSAGE_ERASE_CONVERSATION": "Clear Messages",
+      "APP_MESSAGE_ERASE_ALL_CONVERSATIONS": "Clear All Chats",
+      "APP_MESSAGE_SEND_GPS": "Send location",
+      "APP_MESSAGE_SEND_PHOTO": "Send a photo",
+      "APP_MESSAGE_SET_GPS": "Mark Locatione",
+      "APP_MESSAGE_ZOOM_IMG": "Zoom in",
+      "APP_MESSAGE_DELETE": "Delete Message",
+      "APP_MESSAGE_MESS_NUMBER": "Number",
+      "APP_MESSAGE_MESS_SMS": "SMS",
+      "APP_MESSAGE_MESS_CALL": "Call",
+      "APP_MESSAGE_MESS_COPY": "To copy",
+      "APP_MESSAGE_CONTACT_TITLE": "Contacts",
+      "APP_MESSAGE_CONTRACT_ENTER_NUMBER": "Enter a numbero",
+      "APP_MESSAGE_PLACEHOLDER_ENTER_MESSAGE": "Send Message",
+      "APP_DARKTCHAT_TITLE": "Dark Chat",
+      "APP_DARKTCHAT_NEW_CHANNEL": "Add a channel",
+      "APP_DARKTCHAT_DELETE_CHANNEL": "Clear channel",
+      "APP_DARKTCHAT_CANCEL": "To cancel",
+      "APP_DARKTCHAT_PLACEHOLDER_ENTER_MESSAGE": "Enter message",
+      "APP_TWITTER_NAME": "Twitter",
+      "APP_TWITTER_VIEW_TWITTER": "Twitter",
+      "APP_TWITTER_VIEW_TOP_TWEETS": "Top Tweets",
+      "APP_TWITTER_VIEW_TWEETER": "Tweeter",
+      "APP_TWITTER_VIEW_SETTING": "Settinge",
+      "APP_TWITTER_NEW_ACCOUNT_USERNAME": "User name (> = 4)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD": "Password (> = 6)",
+      "APP_TWITTER_NEW_ACCOUNT_PASSWORD_CONFIRM": "confirm password",
+      "APP_TWITTER_NEW_ACCOUNT_AVATAR": "Url of your avatar",
+      "APP_TWITTER_PLACEHOLDER_MESSAGE": "What's up ?",
+      "APP_TWITTER_BUTTON_ACTION_TWEETER": "Tweeter",
+      "APP_TWITTER_ACCOUNT_LOGIN": "Log in",
+      "APP_TWITTER_ACCOUNT_LOGOUT": "Sign out",
+      "APP_TWITTER_ACCOUNT_PARAM": "My account",
+      "APP_TWITTER_ACCOUNT_AVATAR": "Change avatar",
+      "APP_TWITTER_ACCOUNT_CHANGE_PASSWORD": "Change password",
+      "APP_TWITTER_ACCOUNT_NEW": "New account",
+      "APP_TWIITER_ACCOUNT_SAVE": "Act",
+      "APP_TWIITER_ACCOUNT_CREATE": "Create Account",
+      "APP_TWIITER_ACCOUNT_CANCEL": "Cancel",
+      "APP_TWITTER_ACCOUNT_USERNAME": "Username",
+      "APP_TWITTER_ACCOUNT_PASSWORD": "Password",
+      "APP_TWITTER_NOTIFICATION": "Notification",
+      "APP_TWITTER_NOTIFICATION_WHEN": "Be notified",
+      "APP_TWITTER_NOTIFICATION_ALL": "All posts",
+      "APP_TWITTER_NOTIFICATION_MENTION": "Mentions only",
+      "APP_TWITTER_NOTIFICATION_NEVER": "No",
+      "APP_TWITTER_NOTIFICATION_SOUND": "Play a sound",
+      "APP_TWITTER_NOTIFICATION_SOUND_YES": "Yes",
+      "APP_TWITTER_NOTIFICATION_SOUND_NO": "No",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_SUCCESS": "Your Twitter account has been created",
+      "APP_TWITTER_NOTIF_ACCOUNT_CREATE_ERROR": "Your Twitter account could not be created (Username already used?))",
+      "APP_TWITTER_NOTIF_LOGIN_SUCCESS": "You are connected to twitter",
+      "APP_TWITTER_NOTIF_LOGIN_ERROR": "Invalid Account / Passwords",
+      "APP_TWITTER_NOTIF_AVATAR_SUCCESS": "Your avatar has been changed!",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_SUCCESS": "Your password has been changed",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_ERROR": "Oops ... your password could not be changed",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_MISS_MATCH": "Passwords do not match",
+      "APP_TWITTER_NOTIF_NEW_PASSWORD_LENGTH_ERROR": "Password too short",
+
+
+      "TIMEAGO": [
+        "şu anda",
+        ["%s saniye önce", "%s saniye önce"],
+        ["%s dakika önce", "%s dakika önce"],
+        ["%s saat önce", "%s saat önce"],
+        ["%s gün önce", "%s gün önce"],
+        ["%s hafta önce", "%s hafta önce"],
+        ["%s ay önce", "%s ay önce"],
+        ["%s yıl önce", "%s yıl önce"]
+      ]
+    }
+  }
+}
